@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 120%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#developerImg{
+    width: 100%;
+    height: 50%;
+}
+
+#work{
+    width: 100%;
+    height: 30%;                 
+    border: solid blue 2px;
+    background-color: black;
+    color: white;
+    font-size: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+#skills{
+    width: 100%;
+    height: 30%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2%;
+}
+
+#webDev, #appDev, #uiux{
+    height: 150px;
+    width: 300px;
+    background-color: aqua;
+    margin: 3%;
+    position: relative;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+    height: 70%;
+}
+
+h4{
+    padding-left: 3%;
+}
+
+/* #beforeFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#beforeFooter1, #beforeFooter2{
+    width: 360px;
+    height: 150px;
+    border: solid 2px black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgb(196, 211, 255);
+}
+
+b{
+    margin-top: -20%;
+    margin-bottom: 10px;
+} */
+
+#footer{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding-left: 30%;
+    padding-top: 1%;
+}
