@@ -1,17 +1,22 @@
-import express from "express"
-
-const app = express()
-app.set('view engine', 'ejs');
-
+import express from 'express';
 import path from 'path';
 
-app.use(express.static(path.resolve('./public')));
-app.use(express.static('images'));
+const app = express();
 
-app.listen(8000, ()=>{
-    console.log("Server is listening on port ", 8000);
-})
+// Set the views directory and view engine
+app.set('views', path.resolve('views')); // Ensure 'views' folder is correctly set
+app.set('view engine', 'ejs');
 
-app.use("/", (req, res)=>{
-    res.render("index.ejs")
-})
+// Serve static files from the 'public' folder
+app.use(express.static(path.resolve('./public'))); // This will serve everything in 'public', including images
+
+// Define a route
+app.get('/', (req, res) => {
+    res.render('index'); // Render 'index.ejs' from the 'views' folder
+});
+
+// Start the server
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
+});
